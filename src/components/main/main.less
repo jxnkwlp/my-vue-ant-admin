@@ -1,0 +1,96 @@
+.main {
+    height: 100%; // 左侧菜单
+
+    .left-sider {
+        .left-sider-header {
+            height: 64px;
+            line-height: 32px;
+            padding: 16px;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 3px 2px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .ant-layout-sider-children {
+            overflow-y: scroll;
+            margin-right: -18px;
+        }
+    }
+
+    .top-header {
+        height: 64px;
+        padding: 0 12px 0 0;
+        background: #fff;
+        -webkit-box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+        box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+        position: relative;
+
+        .top-header-left {
+            float: left;
+            font-size: 18px;
+        }
+
+        .top-header-user {
+            float: right;
+            height: 100%;
+
+            .useraction {
+                cursor: pointer;
+                padding: 0 12px;
+                display: inline-block;
+                -webkit-transition: all .3s;
+                transition: all .3s;
+                height: 100%;
+                color: rgba(0, 0, 0, .65);
+
+                &:hover {
+                    background: rgba(0, 0, 0, .025)
+                }
+
+                .avatar {
+                    margin: 20px 8px 20px 0;
+                    // color: #1890ff;
+                    // background: hsla(0, 0%, 100%, .85);
+                    vertical-align: middle;
+                }
+            }
+        }
+
+
+        .trigger {
+            font-size: 20px;
+            line-height: 64px;
+            padding: 0 24px;
+            cursor: pointer;
+            -webkit-transition: color .3s;
+            transition: color .3s;
+
+            &:hover {
+                background: rgba(0, 0, 0, .025)
+            }
+        }
+    }
+
+
+
+
+    .main-content {
+        height: ~"calc(100% - 65px)";
+        overflow: hidden;
+
+        .main-content-layout {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .content-wrapper {
+            padding: 20px 18px;
+            height: ~"calc(100% - 65px)";
+            overflow: auto;
+            -webkit-box-flex: 1;
+            -ms-flex: auto;
+        }
+    }
+}
